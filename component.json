@@ -1,10 +1,10 @@
 {
     "name": "lodash.isnative",
-    "description": "The modern build of lodash’s `_.isNative` as a module.",
+    "description": "The lodash method `_.isNative` exported as a module.",
     "repos": "https://github.com/lodash/lodash.git",
     "tag": "master",
     "reposType": "npm",
     "dependencies": {},
     "main": "index.js",
-    "version": "3.0.5"
+    "version": "3.0.6"
 }

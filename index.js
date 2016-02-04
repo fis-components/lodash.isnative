@@ -1,5 +1,5 @@
 /**
- * lodash 3.0.5 (Custom Build) <https://lodash.com/>
+ * lodash 3.0.6 (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
  * Copyright 2012-2016 The Dojo Foundation <http://dojofoundation.org/>
  * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
@@ -37,10 +37,10 @@ function isHostObject(value) {
 }
 
 /** Used for built-in method references. */
-var objectProto = window.Object.prototype;
+var objectProto = Object.prototype;
 
 /** Used to resolve the decompiled source of functions. */
-var funcToString = window.Function.prototype.toString;
+var funcToString = Function.prototype.toString;
 
 /** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
@@ -105,8 +105,6 @@ function isFunction(value) {
  * // => false
  */
 function isObject(value) {
-  // Avoid a V8 JIT bug in Chrome 19-20.
-  // See https://code.google.com/p/v8/issues/detail?id=2291 for more details.
   var type = typeof value;
   return !!value && (type == 'object' || type == 'function');
 }
